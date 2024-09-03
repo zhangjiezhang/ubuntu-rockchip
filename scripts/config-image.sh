@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -eE 
+set -eEv
 trap 'echo Error: in $0 on line $LINENO' ERR
 
 if [ "$(id -u)" -ne 0 ]; then 
